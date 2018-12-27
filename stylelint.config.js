@@ -1,5 +1,11 @@
 module.exports = {
-  'extends': 'stylelint-config-recommended',
+  extends: [
+    'stylelint-config-recommended',
+    'stylelint-config-recommended-scss'
+  ],
+  plugins: [
+    'stylelint-scss'
+  ],
   rules: {
     'indentation': [2, {
       baseIndentLevel: 0

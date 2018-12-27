@@ -1,34 +1,8 @@
-# empty-vue-project
+# a-simple-todo-project
 
-## Project setup
-```
-yarn install
-```
+一个使用vue 框架vuetify 创建的简单的todo 应用.
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+### 运行
 
-### Compiles and minifies for production
 ```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Run your unit tests
-```
-yarn run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+  yarn serve
