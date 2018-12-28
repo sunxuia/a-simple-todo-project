@@ -1,0 +1,1 @@
+.list-move{transition:-webkit-transform 1s;transition:transform 1s;transition:transform 1s,-webkit-transform 1s}.list-enter-active,.list-leave-active{transition:opacity 1s}.list-enter,.list-leave-to{opacity:0}.fade-enter-active,.fade-leave-active{transition:opacity 1s}.fade-enter,.fade-leave-to{opacity:0}
