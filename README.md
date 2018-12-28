@@ -2,7 +2,7 @@
 
 一个使用vue 框架vuetify 创建的简单的todo 应用.
 
-[demo](https://sunxuia.github.io/a-simple-todo-project/dist)
+[demo](https://sunxuia.github.io/a-simple-todo-project)
 
 ### 运行
 

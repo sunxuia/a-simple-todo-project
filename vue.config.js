@@ -2,7 +2,7 @@ const StylelintWebpackPlugin = require('stylelint-webpack-plugin')
 const isProduction = process.env.NODE_ENV === 'production'
 
 module.exports = {
-  baseUrl: isProduction ? '/a-simple-todo-project/dist/' : '/',
+  baseUrl: isProduction ? '/a-simple-todo-project/' : '/',
   css: {
     sourceMap: !isProduction,
     loaderOptions: {
