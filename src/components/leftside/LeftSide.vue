@@ -1,6 +1,6 @@
 <template>
     <v-navigation-drawer
-        :v-model="mobile && show"
+        v-if="!mobile || show"
         :mini-variant="!mobile && !show"
         :mobile-break-point="-1"
         :class="[$style.drawer, mobile ? show ? $style.maxWidth : $style.hide : undefined]"
