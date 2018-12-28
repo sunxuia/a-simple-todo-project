@@ -129,7 +129,6 @@ const store = new Vuex.Store({
       for (let key of Object.keys(state.categoryTodoItems)) {
         traversalList(state.categoryTodoItems[key])
       }
-      // console.log('data recovered', state.todoItems)
     }
   }
 })

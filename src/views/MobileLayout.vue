@@ -20,7 +20,7 @@
 
     <v-content :class="$style.container">
       <left-side ref="leftSide" :mobile="true" :show="showLeftSide"/>
-      <main-content ref="mainContent" :class="$style.mainContent"/>
+      <main-content ref="mainContent" v-show="!showLeftSide" :class="$style.mainContent"/>
     </v-content>
 
     <v-dialog v-if="editingItem" v-model="showEditDialog" fullscreen hide-overlay>
@@ -57,7 +57,7 @@ export default {
     LeftSide,
     EditDetail
   },
-  data () {
+  data() {
     return {
       showEditDialog: true,
       showLeftSide: true,
@@ -65,24 +65,24 @@ export default {
     }
   },
   methods: {
-    editItem (item) {
+    editItem(item) {
       this.editingItem = item
     },
-    modifyTodoItem () {
+    modifyTodoItem() {
       let res = this.$refs.editingDetail.submit()
       if (res) {
         this.editingItem = null
       }
       return res
     },
-    switchLayout () {
+    switchLayout() {
       this.$router.push({ name: 'pc' })
     },
-    viewCategory () {
+    viewCategory(categoryId) {
       this.showLeftSide = false
     }
   },
-  created () {
+  created() {
     EventBus.$on('edit-todo-item', this.editItem)
     EventBus.$on('view-category', this.viewCategory)
   }

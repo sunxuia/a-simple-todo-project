@@ -79,7 +79,6 @@ export default {
   watch: {
     todoItem: {
       handler () {
-        console.log('todo item changed', this.todoItem)
         if (this.todoItem) {
           this.item = { ...this.todoItem }
           this.children = []
