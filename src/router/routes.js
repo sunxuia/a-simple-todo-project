@@ -1,6 +1,10 @@
+const isMobile = navigator.userAgent.toLowerCase().indexOf('mobile') > -1
+
 export default [{
   path: '/',
-  redirect: '/pc'
+  redirect: {
+    name: isMobile ? 'mobile' : 'pc'
+  }
 }, {
   path: '/pc',
   component: () => import('../views/PCLayout'),
